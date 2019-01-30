@@ -60,7 +60,7 @@ function setDecimalPrecision(selectedDecimal) {
 
 function connectWebSocket() {
 	if ("WebSocket" in window) {
-		var ws = new WebSocket("ws://stocks.mnet.website");
+		var ws = new WebSocket("wss://stocks.mnet.website");
 		ws.onmessage = function (evt) {
 			var data = JSON.parse(evt.data);
 			data.forEach(([name, price]) => { 
