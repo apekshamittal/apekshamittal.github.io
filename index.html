@@ -103,9 +103,6 @@ function connectWebSocket() {
 			table.rows.add(displayData);
 			table.draw();
 		}
-		ws.onclose = function () {
-			alert('closed');
-		}
 	} else {
 		alert('Browser do not support!!!');
 	}
